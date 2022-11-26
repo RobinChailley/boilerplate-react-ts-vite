@@ -1,3 +1,4 @@
+import Navbar from '@components/Navbar';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
@@ -8,6 +9,7 @@ interface RootProps {
 const Root: React.FC<RootProps> = () => {
     return (
         <div>
+            <Navbar/>
             <Outlet/>
         </div>
     );

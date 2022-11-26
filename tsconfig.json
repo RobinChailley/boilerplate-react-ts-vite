@@ -21,13 +21,16 @@
         "skipLibCheck": true,
         "typeRoots": [
             "./node_modules/@types",
-            "./src/@types"
+            "./src/types"
         ],
         "jsx": "react-jsx",
         "baseUrl": ".",
         "paths": {
             "@/*": [
                 "./src/*"
+            ],
+            "@types": [
+                "./src/types/*"
             ],
             "@components/*": [
                 "./src/components/*"
@@ -37,6 +40,15 @@
             ],
             "@navigation/*": [
                 "./src/navigation/*"
+            ],
+            "@utils/*": [
+                "./src/utils/*"
+            ],
+            "@hooks/*": [
+                "./src/hooks/*"
+            ],
+            "@assets/*": [
+                "./src/assets/*"
             ]
         }
     },

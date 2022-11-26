@@ -17,17 +17,20 @@
 
 ## Which techs this boilerplate have in it?
 
-This boilerplate is ready to be used by devs who want to start a new project using React.js, TypeScript and Jest with Vite.
+This boilerplate is ready to be used by devs who want to start a new project using React.js, TypeScript and Jest with
+Vite.
 
 ## Main configurations
 
 - React.js 18+ with TypeScript;
-  - You can import "svgs" with `import { ReactComponent as MyIcon } from './icon-path.svg'`;
-  - You can import any other media (images, videos, etc) that is located inside `src` directory;
-  - You can use absolute imports, using `@` as `src` directory;
+    - You can import "svgs" with `import { ReactComponent as MyIcon } from './icon-path.svg'`;
+    - You can import any other media (images, videos, etc) that is located inside `src` directory;
+    - You can use absolute imports, using `@` as `src` directory;
 - Eslint:
-  - [Standard](https://standardjs.com/) with some modifications;
-  - React Hooks and other React configurations with [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) (same used in Create React App);
+    - [Standard](https://standardjs.com/) with some modifications;
+    - React Hooks and other React configurations
+      with [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) (same used in Create React
+      App);
 - Automatic lint and type-checking with Husky before every commit.
 
 ## Usage
@@ -86,7 +89,8 @@ yarn preview
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/fdaciuk/boilerplate-vite-react/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to
+check [issues page](https://github.com/fdaciuk/boilerplate-vite-react/issues).
 
 ## ✨ Contributors
 
@@ -108,7 +112,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
+Contributions of any kind welcome!
 
 ## Show your support
 
@@ -116,3 +121,11 @@ Give a ⭐️ if this project helped you!
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+
+todo :
+
+- context config
+- dotenv config (typed)
+- snapshots testing
+- tailwind css setup
+- css reset

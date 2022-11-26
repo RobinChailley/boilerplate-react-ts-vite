@@ -18,7 +18,11 @@
                     "@": "./src",
                     "@navigation": "./src/navigation",
                     "@components": "./src/components",
-                    "@pages": "./src/pages"
+                    "@pages": "./src/pages",
+                    "@utils": "./src/utils",
+                    "@assets": "./src/assets",
+                    "@hooks": "./src/hooks",
+                    "@types": "./src/types"
                 },
                 "extensions": [
                     ".js",
@@ -77,7 +81,7 @@
         "max-len": [
             "warn",
             {
-                "code": 80,
+                "code": 100,
                 "ignoreStrings": true,
                 "ignoreTemplateLiterals": true,
                 "ignoreComments": true
