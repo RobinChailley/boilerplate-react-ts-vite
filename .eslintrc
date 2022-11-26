@@ -57,6 +57,10 @@
                 "ignoreRestArgs": true
             }
         ],
+        "@typescript-eslint/indent": [
+            "error",
+            4
+        ],
         "max-len": [
             "warn",
             {

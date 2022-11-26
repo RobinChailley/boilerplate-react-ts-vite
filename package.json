@@ -1,19 +1,20 @@
 {
     "name": "boilerplate-react-vite",
+    "author": "Robin Chailley",
     "version": "0.0.0",
     "private": true,
     "engines": {
         "node": "18.12.1"
     },
     "scripts": {
-        "dev": "vite",
+        "start:dev": "vite",
+        "start:preview": "vite preview",
         "build": "tsc && vite build",
-        "preview": "vite preview",
         "test": "jest",
         "test:watch": "yarn test --watch",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
         "lint:fix": "yarn lint --fix",
-        "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+        "type:check": "tsc --project tsconfig.json --pretty --noEmit",
         "update-deps": "node ./src/config/update-deps.mjs"
     },
     "dependencies": {
