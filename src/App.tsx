@@ -1,11 +1,15 @@
-const App = () => {
-    return (
-        <div>
-            <header>
-                <p>Hello Vite + React!</p>
-            </header>
-        </div>
-    )
+import router from '@navigation/Router';
+import React from 'react';
+import { RouterProvider } from 'react-router-dom';
+
+interface AppProps {
+
 }
+
+const App: React.FC<AppProps> = () => {
+    return (
+        <RouterProvider router={router}/>
+    );
+};
 
 export default App;

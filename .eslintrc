@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "simple-import-sort"
     ],
     "extends": [
         "airbnb-typescript",
@@ -14,7 +15,10 @@
         "import/resolver": {
             "eslint-import-resolver-custom-alias": {
                 "alias": {
-                    "@": "./src"
+                    "@": "./src",
+                    "@navigation": "./src/navigation",
+                    "@components": "./src/components",
+                    "@pages": "./src/pages"
                 },
                 "extensions": [
                     ".js",
@@ -30,6 +34,15 @@
         }
     },
     "rules": {
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 1
+            }
+        ],
         "object-curly-spacing": [
             "warn",
             "always"
@@ -42,7 +55,7 @@
             }
         ],
         "@typescript-eslint/semi": [
-            "off"
+            "error"
         ],
         "@typescript-eslint/no-unused-vars": [
             "warn",
