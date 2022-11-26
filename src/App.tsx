@@ -1,7 +1,7 @@
 const App = () => {
     return (
-        <div className='App'>
-            <header className='App-header'>
+        <div>
+            <header>
                 <p>Hello Vite + React!</p>
             </header>
         </div>

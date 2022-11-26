@@ -1,7 +1,7 @@
 {
     "name": "boilerplate-react-vite",
     "author": "Robin Chailley",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "private": true,
     "engines": {
         "node": "18.12.1"
@@ -11,17 +11,17 @@
         "start:preview": "vite preview",
         "build": "tsc && vite build",
         "test": "jest",
+        "test:coverage": "TZ=UTC jest --coverage",
         "test:watch": "yarn test --watch",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
         "lint:fix": "yarn lint --fix",
-        "type:check": "tsc --project tsconfig.json --pretty --noEmit",
-        "update-deps": "node ./src/config/update-deps.mjs"
+        "type:check": "tsc --project tsconfig.json --pretty --noEmit"
     },
     "dependencies": {
         "@babel/eslint-parser": "^7.19.1",
-        "@testing-library/jest-dom": "5.16.5",
-        "@testing-library/react": "13.4.0",
-        "@types/jest": "29.0.3",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^13.4.0",
+        "@types/jest": "^29.2.3",
         "@types/react": "18.0.21",
         "@types/react-dom": "18.0.6",
         "@vitejs/plugin-react": "2.1.0",
@@ -34,12 +34,12 @@
         "eslint-plugin-n": "15.3.0",
         "eslint-plugin-promise": "6.0.1",
         "eslint-plugin-react": "7.31.8",
-        "jest": "29.1.1",
+        "jest": "^29.3.1",
         "jest-runner-eslint": "1.1.0",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-test-renderer": "18.2.0",
-        "ts-jest": "29.0.2",
+        "ts-jest": "^29.0.3",
         "ts-node": "10.9.1",
         "typescript": "4.8.4",
         "vite": "3.1.4",
@@ -55,6 +55,50 @@
         "eslint-config-airbnb-typescript": "^17.0.0",
         "eslint-import-resolver-custom-alias": "^1.3.0",
         "eslint-import-resolver-typescript": "^3.5.2",
-        "eslint-plugin-jest": "^27.1.6"
+        "eslint-plugin-jest": "^27.1.6",
+        "jest-environment-jsdom": "^29.3.1"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "transformIgnorePatterns": [
+            "node_modules/(?!((jest-)?react(-.*)?|@react(-community)?)/)"
+        ],
+        "collectCoverage": false,
+        "coverageDirectory": "coverage",
+        "coveragePathIgnorePatterns": [
+            "<rootDir>/__tests__/mocks/",
+            "<rootDir>/node_modules/",
+            "<rootDir>/src/adapters/*",
+            "<rootDir>/src/assets/*",
+            "<rootDir>/src/context/*",
+            "<rootDir>/src/store/*"
+        ],
+        "coverageThreshold": {
+            "./src/presentation/": {
+                "branches": 100,
+                "functions": 100,
+                "lines": 100,
+                "statements": 100
+            },
+            "./src/domain/": {
+                "branches": 100,
+                "functions": 100,
+                "lines": 100,
+                "statements": 100
+            }
+        },
+        "moduleNameMapper": {
+            "\\.svg": "<rootDir>/__tests__/mocks/svg.ts"
+        },
+        "setupFilesAfterEnv": [
+            "<rootDir>/__tests__/setup.ts"
+        ],
+        "testEnvironment": "jsdom",
+        "testMatch": [
+            "<rootDir>/__tests__/**/*.test.ts?(x)"
+        ],
+        "testPathIgnorePatterns": [
+            "<rootDir>/__tests__/setup.ts"
+        ]
     }
 }
