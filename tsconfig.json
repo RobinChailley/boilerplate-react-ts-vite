@@ -29,26 +29,35 @@
             "@/*": [
                 "./src/*"
             ],
-            "@types": [
-                "./src/types/*"
+            "@assets/*": [
+                "./src/assets/*"
+            ],
+            "@adapters/*": [
+                "./src/adapters/*"
             ],
             "@components/*": [
                 "./src/components/*"
             ],
-            "@pages/*": [
-                "./src/pages/*"
+            "@context/*": [
+                "./src/context/*"
             ],
-            "@navigation/*": [
-                "./src/navigation/*"
-            ],
-            "@utils/*": [
-                "./src/utils/*"
+            "@domain/*": [
+                "./src/domain/*"
             ],
             "@hooks/*": [
                 "./src/hooks/*"
             ],
-            "@assets/*": [
-                "./src/assets/*"
+            "@navigation/*": [
+                "./src/navigation/*"
+            ],
+            "@pages/*": [
+                "./src/pages/*"
+            ],
+            "@types/*": [
+                "./src/types/*"
+            ],
+            "@utils/*": [
+                "./src/utils/*"
             ]
         }
     },

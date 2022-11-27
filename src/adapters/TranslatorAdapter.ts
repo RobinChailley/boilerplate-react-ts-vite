@@ -10,6 +10,7 @@ class TranslatorAdapter {
             interpolation: {
                 escapeValue: false,
             },
+            lng: 'fr',
             resources: {
                 en: {
                     translation: en,

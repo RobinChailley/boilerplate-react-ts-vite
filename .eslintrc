@@ -16,13 +16,16 @@
             "eslint-import-resolver-custom-alias": {
                 "alias": {
                     "@": "./src",
-                    "@navigation": "./src/navigation",
-                    "@components": "./src/components",
-                    "@pages": "./src/pages",
-                    "@utils": "./src/utils",
                     "@assets": "./src/assets",
+                    "@adapters": "./src/adapters",
+                    "@components": "./src/components",
+                    "@context": "./src/context",
+                    "@domain": "./src/domain",
                     "@hooks": "./src/hooks",
-                    "@types": "./src/types"
+                    "@navigation": "./src/navigation",
+                    "@pages": "./src/pages",
+                    "@types": "./src/types",
+                    "@utils": "./src/utils"
                 },
                 "extensions": [
                     ".js",
