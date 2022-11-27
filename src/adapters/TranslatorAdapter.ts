@@ -4,8 +4,8 @@ import i18n, { TFunction } from 'i18next';
 import { initReactI18next, useTranslation } from 'react-i18next';
 
 class TranslatorAdapter {
-    setup = (): void => {
-        i18n.use(initReactI18next).init({
+    setup = async (): Promise<any> => {
+        return i18n.use(initReactI18next).init({
             fallbackLng: 'fr',
             interpolation: {
                 escapeValue: false,

@@ -1,13 +1,12 @@
-import { useConfig } from '@context/ConfigurationContext';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface HomeProps {
 
 }
 
 const Home: React.FC<HomeProps> = () => {
-    const { translatorAdapter } = useConfig();
-    const t = translatorAdapter.translate();
+    const { t } = useTranslation();
 
     return (
         <div>

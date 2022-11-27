@@ -8,6 +8,13 @@ export interface HttpResponse<T> extends Response {
 }
 
 class BaseHttpAdapter {
+
+    API_URL: string;
+
+    constructor(API_URL: string) {
+        this.API_URL = API_URL;
+    }
+
     get(path: string, args: RequestInit = {}): Promise<Response> {
         return this.http(path, { ...args, method: 'get' });
     }

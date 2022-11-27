@@ -5,13 +5,16 @@ import IGetData from '@domain/usecases/IGetData';
 
 const getConfigContextValue = (): ConfigContextValueType => {
     const translatorAdapter = new TranslatorAdapter();
-    const baseHttpAdapter = new BaseHttpAdapter();
+    const baseHttpAdapter = new BaseHttpAdapter(import.meta.env.API_URL || '');
 
     const iGetData = new IGetData(baseHttpAdapter);
 
     return {
         iGetData,
         translatorAdapter,
+        env: {
+            API_URL: import.meta.env.API_URL || '',
+        },
     };
 };
 

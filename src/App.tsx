@@ -1,4 +1,4 @@
-import { ConfigContext } from '@context/ConfigurationContext';
+import { ConfigContext, useConfig } from '@context/ConfigurationContext';
 import getConfigContextValue from '@context/getConfigurationContextValue';
 import router from '@navigation/Router';
 import React, { useEffect } from 'react';
@@ -8,16 +8,29 @@ interface AppProps {
 
 }
 
-const App: React.FC<AppProps> = () => {
-    const config = getConfigContextValue();
+const AppConfig: React.FC = () => {
+    const { translatorAdapter } = useConfig();
+    const [isReady, setIsReady] = React.useState(false);
 
     useEffect(() => {
-        config.translatorAdapter.setup();
-    }, [config.translatorAdapter]);
+        (async () => {
+            await translatorAdapter.setup();
+            setIsReady(true);
+        })();
+    }, [translatorAdapter]);
 
+    if (!isReady) {
+        return null;
+    }
     return (
-        <ConfigContext.Provider value={config}>
-            <RouterProvider router={router}/>
+        <RouterProvider router={router}/>
+    );
+};
+
+const App: React.FC<AppProps> = () => {
+    return (
+        <ConfigContext.Provider value={getConfigContextValue()}>
+            <AppConfig/>
         </ConfigContext.Provider>
     );
 };
