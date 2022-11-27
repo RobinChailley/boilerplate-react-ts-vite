@@ -9,6 +9,8 @@ const getConfigContextValue = (): ConfigContextValueType => {
 
     const iGetData = new IGetData(baseHttpAdapter);
 
+    console.log(import.meta.env.VITE_API_URL);
+
     return {
         iGetData,
         translatorAdapter,
