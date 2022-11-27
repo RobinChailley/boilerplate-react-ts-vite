@@ -124,8 +124,5 @@ _This README was generated with ❤️ by [readme-md-generator](https://github.c
 
 todo :
 
-- context config
 - dotenv config (typed)
 - snapshots testing
-- tailwind css setup
-- css reset
