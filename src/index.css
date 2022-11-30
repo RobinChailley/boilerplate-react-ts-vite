@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.atom {
+    /*@apply border border-red-700;*/
+}
+
+.molecule {
+    /*@apply border border-green-400;*/
+}
+
+.organism {
+    /*@apply border border-blue-700;*/
+}

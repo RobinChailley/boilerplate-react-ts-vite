@@ -124,5 +124,8 @@ _This README was generated with ❤️ by [readme-md-generator](https://github.c
 
 todo :
 
-- dotenv config (typed)
-- snapshots testing
+- prettier
+- sort alphabeticaly (json files + json in js) ?
+- write a beautiful readme
+- error handling ?
+- logger ? 

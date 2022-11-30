@@ -1,3 +1,5 @@
+import BaseHttpAdapterInterface from '@adapters/interfaces/BaseHttpAdapterInterface';
+
 export interface Body {
     [key: string]: any;
 }
@@ -7,7 +9,7 @@ export interface HttpResponse<T> extends Response {
     error?: Error;
 }
 
-class BaseHttpAdapter {
+class BaseHttpAdapter implements BaseHttpAdapterInterface {
 
     API_URL: string;
 

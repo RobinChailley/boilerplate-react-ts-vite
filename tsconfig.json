@@ -9,7 +9,9 @@
             "ESNext"
         ],
         "types": [
-            "vite/client"
+            "vite/client",
+            "jest",
+            "node"
         ],
         "allowJs": false,
         "esModuleInterop": true,
@@ -17,7 +19,7 @@
         "strict": true,
         "forceConsistentCasingInFileNames": true,
         "module": "ESNext",
-        "moduleResolution": "Node",
+        "moduleResolution": "node",
         "resolveJsonModule": true,
         "isolatedModules": false,
         "noEmit": true,
@@ -38,8 +40,8 @@
             "@adapters/*": [
                 "./src/adapters/*"
             ],
-            "@components/*": [
-                "./src/components/*"
+            "@presentation/*": [
+                "./src/presentation/*"
             ],
             "@context/*": [
                 "./src/context/*"
@@ -65,6 +67,8 @@
         }
     },
     "include": [
-        "./src"
+        "./src",
+        "./__tests__",
+        "./vite.config.ts"
     ]
 }

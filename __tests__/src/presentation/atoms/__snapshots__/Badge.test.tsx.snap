@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge should render correctly 1`] = `
+<span
+  className="atom text-sm font-semibold mr-2 px-2.5 py-0.5 rounded bg-orange-200 text-orange-900"
+/>
+`;

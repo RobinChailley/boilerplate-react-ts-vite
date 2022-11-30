@@ -1,9 +1,11 @@
-import TranslatorAdapter from '@adapters/TranslatorAdapter';
+import TranslatorAdapterInterface from '@adapters/interfaces/TranslatorAdapterInterface';
 import IGetDataInterface from '@domain/usecases/interfaces/IGetDataInterface';
+import ILogoutInterface from '@domain/usecases/interfaces/ILogoutInterface';
 
 export interface ConfigContextValueType {
-    translatorAdapter: TranslatorAdapter;
+    translatorAdapter: TranslatorAdapterInterface;
     iGetData: IGetDataInterface;
+    iLogout: ILogoutInterface;
     env: {
         API_URL: string;
     }

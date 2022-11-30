@@ -1,12 +1,12 @@
-import BaseHttpAdapter from '@adapters/BaseHttpAdapter';
+import BaseHttpAdapterInterface from '@adapters/interfaces/BaseHttpAdapterInterface';
 import Data from '@domain/entities/Data';
 import IGetDataInterface from '@domain/usecases/interfaces/IGetDataInterface';
 
 class IGetData implements IGetDataInterface {
 
-    baseHttpAdapter: BaseHttpAdapter;
+    baseHttpAdapter: BaseHttpAdapterInterface;
 
-    constructor(baseHttpAdapter: BaseHttpAdapter) {
+    constructor(baseHttpAdapter: BaseHttpAdapterInterface) {
         this.baseHttpAdapter = baseHttpAdapter;
     }
 
@@ -25,7 +25,7 @@ class IGetData implements IGetDataInterface {
         //     return new Error('global.errors.unexpected');
         // }
 
-        throw new Error('Method not implemented.');
+        return new Error('Method not implemented.');
     }
 }
 

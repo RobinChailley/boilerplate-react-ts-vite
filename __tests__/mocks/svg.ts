@@ -1,4 +1,4 @@
-const svgUrl = 'svgUrl'
+const svgUrl = 'svgUrl';
 
-export default svgUrl
-export const ReactComponent = 'svg'
+export default svgUrl;
+export const ReactComponent = 'svg';

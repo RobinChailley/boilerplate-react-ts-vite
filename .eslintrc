@@ -18,7 +18,7 @@
                     "@": "./src",
                     "@assets": "./src/assets",
                     "@adapters": "./src/adapters",
-                    "@components": "./src/components",
+                    "@presentation": "./src/presentation",
                     "@context": "./src/context",
                     "@domain": "./src/domain",
                     "@hooks": "./src/hooks",

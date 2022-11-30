@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error should render correctly 1`] = `
+<div
+  id="error-page"
+>
+  <h1>
+    Oops!
+  </h1>
+  <p>
+    Sorry, an unexpected error has occurred.
+  </p>
+</div>
+`;

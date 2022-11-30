@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar should render correctly 1`] = `
+<div
+  className="organism w-64 h-[90vh] mt-[5vh] ml-4 bg-gray-800 p-4 rounded-md flex flex-col justify-between"
+>
+  <div>
+    <ul
+      className="space-y-4"
+    >
+      <li
+        className="atom"
+      />
+    </ul>
+    <div
+      className="molecule p-4 mt-6 rounded-lg bg-blue-900"
+      id="closable-card"
+      role="alert"
+    >
+      <div
+        className="flex items-center mb-3"
+      >
+        <span
+          className="atom text-sm font-semibold mr-2 px-2.5 py-0.5 rounded bg-orange-200 text-orange-900"
+        >
+          sidebar.card.badge
+        </span>
+        <button
+          className="ml-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 inline-flex h-6 w-6 dark:bg-blue-900 dark:text-blue-400 dark:hover:bg-blue-800"
+          data-collapse-toggle="closable-card"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="w-4 h-4"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clipRule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+      <p
+        className="mb-3 text-sm text-blue-400"
+      >
+        sidebar.card.text
+      </p>
+      <a
+        className="text-sm underline text-blue-400 hover:text-blue-300"
+        href="#"
+      >
+        sidebar.card.cta
+      </a>
+    </div>
+  </div>
+  <div
+    className="w-full"
+  >
+    <button
+      className="w-full bg-blue-700 rounded-md p-2 text-blue-200"
+      onClick={[Function]}
+    >
+      sidebar.logout
+    </button>
+  </div>
+</div>
+`;

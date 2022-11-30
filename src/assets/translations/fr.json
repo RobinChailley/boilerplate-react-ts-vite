@@ -1,12 +1,22 @@
 {
-    "home": {
-        "title": "Accueil"
+    "dashboard": {
+        "title": "Tableau de bord"
     },
-    "about": {
-        "title": "À propos"
-    },
-    "team": {
-        "title": "Équipe"
+    "sidebar": {
+        "pages": {
+            "dashboard": "Tableau de bord",
+            "kanban": "Kanban",
+            "inbox": "Boîte de réception",
+            "calendar": "Calendrier",
+            "user": "Utilisateur",
+            "settings": "Paramètres"
+        },
+        "card": {
+            "badge": "Beta",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+            "cta": "Lorem ipsum dolor sit"
+        },
+        "logout": "Se déconnecter"
     },
     "global": {
         "errors": {

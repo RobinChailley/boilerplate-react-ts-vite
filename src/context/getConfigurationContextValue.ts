@@ -2,20 +2,21 @@ import BaseHttpAdapter from '@adapters/BaseHttpAdapter';
 import TranslatorAdapter from '@adapters/TranslatorAdapter';
 import { ConfigContextValueType } from '@context/configurationContextTypes';
 import IGetData from '@domain/usecases/IGetData';
+import ILogout from '@domain/usecases/ILogout';
 
 const getConfigContextValue = (): ConfigContextValueType => {
     const translatorAdapter = new TranslatorAdapter();
-    const baseHttpAdapter = new BaseHttpAdapter(import.meta.env.API_URL || '');
+    const baseHttpAdapter = new BaseHttpAdapter(process.env.VITE_API_URL || '');
 
     const iGetData = new IGetData(baseHttpAdapter);
-
-    console.log(import.meta.env.VITE_API_URL);
+    const iLogout = new ILogout();
 
     return {
         iGetData,
+        iLogout,
         translatorAdapter,
         env: {
-            API_URL: import.meta.env.API_URL || '',
+            API_URL: process.env.VITE_API_URL || '',
         },
     };
 };
