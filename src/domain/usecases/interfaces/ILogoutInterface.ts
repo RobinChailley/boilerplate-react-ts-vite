@@ -1,5 +1,5 @@
 interface ILogoutInterface {
-    execute(): Promise<Error | void>;
+  execute(): Promise<Error | void>;
 }
 
 export default ILogoutInterface;

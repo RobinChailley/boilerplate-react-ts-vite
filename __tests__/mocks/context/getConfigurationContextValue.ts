@@ -5,19 +5,19 @@ import IGetData from '../usecase/IGetData';
 import ILogout from '../usecase/ILogout';
 
 const getConfigContextValue = (): ConfigContextValueType => {
-    const translatorAdapter = new TranslatorAdapter();
+  const translatorAdapter = new TranslatorAdapter();
 
-    const iGetData = new IGetData();
-    const iLogout = new ILogout();
+  const iGetData = new IGetData();
+  const iLogout = new ILogout();
 
-    return {
-        iGetData,
-        iLogout,
-        translatorAdapter,
-        env: {
-            API_URL: '',
-        },
-    };
+  return {
+    iGetData,
+    iLogout,
+    translatorAdapter,
+    env: {
+      API_URL: '',
+    },
+  };
 };
 
 export default getConfigContextValue;

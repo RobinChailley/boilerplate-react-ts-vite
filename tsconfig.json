@@ -1,74 +1,37 @@
 {
-    "compilerOptions": {
-        "incremental": true,
-        "target": "ESNext",
-        "useDefineForClassFields": true,
-        "lib": [
-            "DOM",
-            "DOM.Iterable",
-            "ESNext"
-        ],
-        "types": [
-            "vite/client",
-            "jest",
-            "node"
-        ],
-        "allowJs": false,
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
-        "strict": true,
-        "forceConsistentCasingInFileNames": true,
-        "module": "ESNext",
-        "moduleResolution": "node",
-        "resolveJsonModule": true,
-        "isolatedModules": false,
-        "noEmit": true,
-        "skipLibCheck": true,
-        "typeRoots": [
-            "./node_modules/@types",
-            "./src/types"
-        ],
-        "jsx": "react-jsx",
-        "baseUrl": ".",
-        "paths": {
-            "@/*": [
-                "./src/*"
-            ],
-            "@assets/*": [
-                "./src/assets/*"
-            ],
-            "@adapters/*": [
-                "./src/adapters/*"
-            ],
-            "@presentation/*": [
-                "./src/presentation/*"
-            ],
-            "@context/*": [
-                "./src/context/*"
-            ],
-            "@domain/*": [
-                "./src/domain/*"
-            ],
-            "@hooks/*": [
-                "./src/hooks/*"
-            ],
-            "@navigation/*": [
-                "./src/navigation/*"
-            ],
-            "@pages/*": [
-                "./src/pages/*"
-            ],
-            "@types/*": [
-                "./src/types/*"
-            ],
-            "@utils/*": [
-                "./src/utils/*"
-            ]
-        }
-    },
-    "include": [
-        "./src",
-        "./__tests__",
-        "./vite.config.ts"
-    ]
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["vite/client", "jest", "node"],
+    "allowJs": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@adapters/*": ["./src/adapters/*"],
+      "@presentation/*": ["./src/presentation/*"],
+      "@context/*": ["./src/context/*"],
+      "@domain/*": ["./src/domain/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@navigation/*": ["./src/navigation/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@types/*": ["./src/types/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
+  },
+  "include": ["./src", "./__tests__", "./vite.config.ts"]
 }

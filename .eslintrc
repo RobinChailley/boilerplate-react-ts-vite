@@ -1,111 +1,97 @@
 {
-    "plugins": [
-        "@typescript-eslint",
-        "simple-import-sort"
-    ],
-    "extends": [
-        "airbnb-typescript",
-        "react-app"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "project": "./tsconfig.json"
-    },
-    "settings": {
-        "import/resolver": {
-            "eslint-import-resolver-custom-alias": {
-                "alias": {
-                    "@": "./src",
-                    "@assets": "./src/assets",
-                    "@adapters": "./src/adapters",
-                    "@presentation": "./src/presentation",
-                    "@context": "./src/context",
-                    "@domain": "./src/domain",
-                    "@hooks": "./src/hooks",
-                    "@navigation": "./src/navigation",
-                    "@pages": "./src/pages",
-                    "@types": "./src/types",
-                    "@utils": "./src/utils"
-                },
-                "extensions": [
-                    ".js",
-                    ".jsx",
-                    ".ts",
-                    ".tsx",
-                    ".json"
-                ]
-            },
-            "typescript": {
-                "alwaysTryTypes": true
-            }
-        }
-    },
-    "rules": {
-        "simple-import-sort/imports": "error",
-        "simple-import-sort/exports": "error",
-        "no-multiple-empty-lines": [
-            "error",
-            {
-                "max": 1,
-                "maxEOF": 1
-            }
-        ],
-        "object-curly-spacing": [
-            "warn",
-            "always"
-        ],
-        "no-unused-vars": [
-            "warn",
-            {
-                "vars": "all",
-                "args": "none"
-            }
-        ],
-        "@typescript-eslint/semi": [
-            "error"
-        ],
-        "@typescript-eslint/no-unused-vars": [
-            "warn",
-            {
-                "vars": "all",
-                "args": "none"
-            }
-        ],
-        "@typescript-eslint/indent": [
-            "error",
-            4
-        ],
-        "max-len": [
-            "warn",
-            {
-                "code": 100,
-                "ignoreStrings": true,
-                "ignoreTemplateLiterals": true,
-                "ignoreComments": true
-            }
-        ],
-        "no-plusplus": [
-            "error",
-            {
-                "allowForLoopAfterthoughts": true
-            }
-        ],
-        "react/jsx-key": "error",
-        "import/no-extraneous-dependencies": [
-            "error",
-            {
-                "devDependencies": false,
-                "optionalDependencies": false,
-                "peerDependencies": false
-            }
-        ],
-        "react/jsx-props-no-spreading": "off",
-        "import/prefer-default-export": "off",
-        "react/jsx-boolean-value": "off",
-        "react/prop-types": "off",
-        "react/no-unescaped-entities": "off",
-        "react/jsx-one-expression-per-line": "off",
-        "react/jsx-wrap-multilines": "off",
-        "react/destructuring-assignment": "off"
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
+  "extends": ["airbnb-typescript", "react-app"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "eslint-import-resolver-custom-alias": {
+        "alias": {
+          "@": "./src",
+          "@assets": "./src/assets",
+          "@adapters": "./src/adapters",
+          "@presentation": "./src/presentation",
+          "@context": "./src/context",
+          "@domain": "./src/domain",
+          "@hooks": "./src/hooks",
+          "@navigation": "./src/navigation",
+          "@pages": "./src/pages",
+          "@types": "./src/types",
+          "@utils": "./src/utils"
+        },
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
+      },
+      "typescript": {
+        "alwaysTryTypes": true
+      }
     }
+  },
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 1
+      }
+    ],
+    "object-curly-spacing": ["error", "always"],
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "@typescript-eslint/semi": ["error"],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "@typescript-eslint/indent": ["error", 2],
+    "max-len": [
+      "warn",
+      {
+        "code": 100,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreComments": true
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "react/jsx-key": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": false,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-boolean-value": "off",
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/destructuring-assignment": "off",
+    "object-curly-newline": ["error", {
+      "ObjectExpression": "always",
+      "ObjectPattern": { "multiline": true },
+      "ImportDeclaration": "never",
+      "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+    }]
+  }
 }

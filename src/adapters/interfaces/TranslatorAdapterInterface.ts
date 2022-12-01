@@ -1,7 +1,7 @@
 interface TranslatorAdapterInterface {
-    setup(): Promise<any>;
+  setup(): Promise<any>;
 
-    translate: () => (key: string) => string;
+  translate: () => (key: string) => string;
 }
 
 export default TranslatorAdapterInterface;

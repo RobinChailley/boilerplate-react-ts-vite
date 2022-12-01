@@ -5,20 +5,20 @@ import IGetData from '@domain/usecases/IGetData';
 import ILogout from '@domain/usecases/ILogout';
 
 const getConfigContextValue = (): ConfigContextValueType => {
-    const translatorAdapter = new TranslatorAdapter();
-    const baseHttpAdapter = new BaseHttpAdapter(process.env.VITE_API_URL || '');
+  const translatorAdapter = new TranslatorAdapter();
+  const baseHttpAdapter = new BaseHttpAdapter(process.env.VITE_API_URL || '');
 
-    const iGetData = new IGetData(baseHttpAdapter);
-    const iLogout = new ILogout();
+  const iGetData = new IGetData(baseHttpAdapter);
+  const iLogout = new ILogout();
 
-    return {
-        iGetData,
-        iLogout,
-        translatorAdapter,
-        env: {
-            API_URL: process.env.VITE_API_URL || '',
-        },
-    };
+  return {
+    iGetData,
+    iLogout,
+    translatorAdapter,
+    env: {
+      API_URL: process.env.VITE_API_URL || '',
+    },
+  };
 };
 
 export default getConfigContextValue;

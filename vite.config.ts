@@ -7,18 +7,23 @@ import tsConfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
 export default defineConfig(configEnv => ({
-    plugins: [
-        react(),
-        tsConfigPaths(),
-        linterPlugin({
-            include: ['./src/**/*.{ts,tsx}'],
-            linters: [new EsLinter({ configEnv })],
-        }),
-        svgrPlugin(),
-        EnvironmentPlugin({
-            VITE_API_URL: '',
-        }, {
-            prefix: 'VITE_',
-        }),
-    ],
+  plugins: [
+    react(),
+    tsConfigPaths(),
+    linterPlugin({
+      include: ['./src/**/*.{ts,tsx}'],
+      linters: [new EsLinter({
+        configEnv, 
+      })],
+    }),
+    svgrPlugin(),
+    EnvironmentPlugin(
+      {
+        VITE_API_URL: '',
+      },
+      {
+        prefix: 'VITE_',
+      },
+    ),
+  ],
 }));

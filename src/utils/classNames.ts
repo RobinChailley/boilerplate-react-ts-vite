@@ -1,5 +1,3 @@
-const classNames = (...classes: any[]) => (
-    classes.filter(Boolean).join(' ')
-);
+const classNames = (...classes: any[]) => classes.filter(Boolean).join(' ');
 
 export default classNames;
