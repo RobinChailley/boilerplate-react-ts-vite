@@ -22,6 +22,7 @@ to ensure well-structured, well-formatted and well-tested code.
 
 ## What does this boilerplate contain ?
 
+- [Vite](#vite)
 - [React Typescript support](#react-typescript-support)
 - [Hexagonal architecture](#hexagonal-architecture)
 - [Atomic design](#atomic-design)
@@ -33,6 +34,13 @@ to ensure well-structured, well-formatted and well-tested code.
 - [Multi language support](#multi-language-support)
 - [Typed env](#typed-env)
 - [Default ui](#default-ui)
+
+
+### Vite
+
+This boilerplate uses Vite instead of create-react-app.
+
+[vite](https://vitejs.dev/)
 
 ### React Typescript support
 
