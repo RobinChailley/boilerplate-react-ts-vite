@@ -7,11 +7,11 @@ import { initReactI18next, useTranslation } from 'react-i18next';
 class TranslatorAdapter implements TranslatorAdapterInterface {
   setup = async (): Promise<any> => {
     return i18n.use(initReactI18next).init({
-      fallbackLng: 'fr',
+      fallbackLng: 'en',
       interpolation: {
         escapeValue: false,
       },
-      lng: 'fr',
+      lng: 'en',
       resources: {
         en: {
           translation: en,

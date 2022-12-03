@@ -1,12 +1,22 @@
 {
-  "home": {
-    "title": "Home"
+  "dashboard": {
+    "title": "Dashboard"
   },
-  "about": {
-    "title": "About"
-  },
-  "team": {
-    "title": "Team"
+  "sidebar": {
+    "pages": {
+      "dashboard": "Dashboard",
+      "kanban": "Kanban",
+      "inbox": "Inbox",
+      "calendar": "Calendar",
+      "user": "Users",
+      "settings": "Settings"
+    },
+    "card": {
+      "badge": "Beta",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+      "cta": "Lorem ipsum dolor sit"
+    },
+    "logout": "Logout"
   },
   "global": {
     "errors": {
