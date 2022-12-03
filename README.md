@@ -1,5 +1,11 @@
 
-# 🤖 Boilerplate React Typescript Vite
+<h1 align="center">Boilerplate React.js + TypeScript + Vite 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
 Tired of doing the same things every time I start a side project,
 I created this boilerplate to make my life easier.
