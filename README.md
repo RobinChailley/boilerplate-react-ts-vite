@@ -1,11 +1,5 @@
 
-<h1 align="center">Boilerplate React.js + TypeScript + Vite 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-</p>
+# 🤖 Boilerplate React Typescript Vite
 
 Tired of doing the same things every time I start a side project,
 I created this boilerplate to make my life easier.
@@ -14,9 +8,11 @@ This boilerplate includes all the tools I use on a daily basis when I develop,
 to ensure well-structured, well-formatted and well-tested code.
 
 
+
+
 ## Content table
 
-1. [What does this boilerplate contain ?](#what-does-this-boilerplate-contain)
+1. [What does this boilerplate contain ?](#what-does-this-boilerplate-contain-?)
 2. [Usage](#usage)
 3. [Production version](#production-version)
 4. [Show your support](#show-your-support)
@@ -24,9 +20,9 @@ to ensure well-structured, well-formatted and well-tested code.
 6. [Contributing](#contributing)
 
 
-## What does this boilerplate contain
+## What does this boilerplate contain ?
 
-- [Typescript support](#typescript-support)
+- [React Typescript support](#react-typescript-support)
 - [Hexagonal architecture](#hexagonal-architecture)
 - [Atomic design](#atomic-design)
 - [Tests and coverage (snapshots and unit tests)](#tests-and-coverage)
@@ -36,11 +32,15 @@ to ensure well-structured, well-formatted and well-tested code.
 - [Tailwind](#tailwind)
 - [Multi language support](#multi-language-support)
 - [Typed env](#typed-env)
+- [Default ui](#default-ui)
 
-### Typescript support
+### React Typescript support
 
 TypeScript is a strongly typed programming language
 that builds on JavaScript, giving you better tooling at any scale.
+
+React : 18.2.0
+Typescript : 4.8.4
 
 ### Hexagonal architecture
 
@@ -133,6 +133,13 @@ To use the multilanguage :
 
 ![multi-language](./readme-assets/multi-language.png)
 
+### Default ui
+
+In order to show an example, the boilerplate contains a default ui with a simple
+side bar and a title
+
+![default-ui](./readme-assets/default-ui.png)
+
 ### Typed env
 
 To have autocompletion on the process.env object,
@@ -192,7 +199,7 @@ Give a ⭐️ if this project helped you!
 - LinkedIn: [@RobinChailley](https://www.linkedin.com/in/robin-chailley/)
 
 
-## Contributing
+## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
