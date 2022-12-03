@@ -38,7 +38,7 @@ class BaseHttpAdapter implements BaseHttpAdapterInterface {
     contentType = 'application/json',
   ): Promise<Response> {
     return this.http(path, {
-      ...args, method: 'post', body: JSON.stringify(body), 
+      ...args, body: JSON.stringify(body), method: 'post', 
     }, contentType);
   }
 
@@ -46,8 +46,8 @@ class BaseHttpAdapter implements BaseHttpAdapterInterface {
   }): Promise<Response> {
     return this.http(path, {
       ...args,
-      method: 'put',
       body: JSON.stringify(body),
+      method: 'put',
     });
   }
 
@@ -58,12 +58,12 @@ class BaseHttpAdapter implements BaseHttpAdapterInterface {
   ): Promise<HttpResponse<T>> {
     const request = new Request(path, {
       ...args,
+      cache: 'no-cache',
       headers: {
         ...args.headers,
         Accept: 'application/json',
         'Content-Type': contentType,
       },
-      cache: 'no-cache',
     });
 
     return new Promise((resolve, reject) => {

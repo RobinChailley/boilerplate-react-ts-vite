@@ -6,15 +6,15 @@ import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Root />,
-    errorElement: <Error />,
     children: [
       {
-        path: '',
         element: <Home />,
+        path: '',
       },
     ],
+    element: <Root />,
+    errorElement: <Error />,
+    path: '/',
   },
 ]);
 

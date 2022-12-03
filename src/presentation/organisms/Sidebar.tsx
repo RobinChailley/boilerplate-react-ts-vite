@@ -14,14 +14,14 @@ interface SidebarProps {
 }
 
 const classes = {
+  beta: 'rounded-md bg-orange-200 text-orange-900 font-semibold w-min px-2',
   container:
     'organism w-64 h-[90vh] mt-[5vh] ml-4 bg-gray-800 p-4 rounded-md flex flex-col justify-between',
+  ctaContainer: 'bg-blue-900 rounded-md p-4',
+  ctaText: 'pt-8 text-blue-400 text-sm',
   listContainer: 'space-y-4',
   logout: 'w-full bg-blue-700 rounded-md p-2 text-blue-200',
   logoutContainer: 'w-full',
-  ctaContainer: 'bg-blue-900 rounded-md p-4',
-  beta: 'rounded-md bg-orange-200 text-orange-900 font-semibold w-min px-2',
-  ctaText: 'pt-8 text-blue-400 text-sm',
 };
 
 const Sidebar: React.FC<SidebarProps> = ({ items }) => {

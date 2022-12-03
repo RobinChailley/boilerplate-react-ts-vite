@@ -11,8 +11,8 @@ interface SidebarLinkProps {
 
 const classes = {
   container: 'atom',
-  link: 'text-base p-2 flex items-center dark:text-white rounded hover:bg-gray-700',
   img: 'h-5 w-5',
+  link: 'text-base p-2 flex items-center dark:text-white rounded hover:bg-gray-700',
   text: 'ml-4',
 };
 

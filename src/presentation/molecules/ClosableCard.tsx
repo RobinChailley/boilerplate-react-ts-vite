@@ -12,9 +12,9 @@ interface ClosableCardProps {
 }
 
 const classes = {
-  container: 'molecule p-4 mt-6 rounded-lg bg-blue-900',
   button:
     'ml-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 inline-flex h-6 w-6 dark:bg-blue-900 dark:text-blue-400 dark:hover:bg-blue-800',
+  container: 'molecule p-4 mt-6 rounded-lg bg-blue-900',
   ctaText: 'text-sm underline text-blue-400 hover:text-blue-300',
   text: 'mb-3 text-sm text-blue-400',
   topRow: 'flex items-center mb-3',

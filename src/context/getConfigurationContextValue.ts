@@ -12,12 +12,12 @@ const getConfigContextValue = (): ConfigContextValueType => {
   const iLogout = new ILogout();
 
   return {
-    iGetData,
-    iLogout,
-    translatorAdapter,
     env: {
       API_URL: process.env.VITE_API_URL || '',
     },
+    iGetData,
+    iLogout,
+    translatorAdapter,
   };
 };
 

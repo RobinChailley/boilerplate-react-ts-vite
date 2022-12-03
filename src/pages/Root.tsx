@@ -5,40 +5,41 @@ import { Outlet } from 'react-router-dom';
 
 const items = [
   {
+    alt: '',
+    icon: DashboardPNG,
     title: 'sidebar.pages.dashboard',
     to: '/',
-    icon: DashboardPNG,
-    alt: '',
   },
   {
+    alt: '',
+    icon: KanbanPNG,
     title: 'sidebar.pages.kanban',
     to: '/',
-    icon: KanbanPNG,
-    alt: '',
   },
   {
+    alt: '',
+    icon: InboxPNG,
     title: 'sidebar.pages.inbox',
     to: '/',
-    icon: InboxPNG,
-    alt: '',
   },
   {
+    alt: '',
+    icon: CalendarPNG,
     title: 'sidebar.pages.calendar',
     to: '/',
-    icon: CalendarPNG,
-    alt: '',
   },
   {
+    alt: '',
+    icon: UserPNG,
     title: 'sidebar.pages.user',
     to: '/',
-    icon: UserPNG,
-    alt: '',
   },
   {
+    alt: '',
+    icon: SettingsPNG,
     title: 'sidebar.pages.settings',
     to: '/',
-    icon: SettingsPNG,
-    alt: '',
+
   },
 ];
 
