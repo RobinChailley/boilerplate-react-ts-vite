@@ -10,15 +10,15 @@ to ensure well-structured, well-formatted and well-tested code.
 
 ## Content table
 
-1. [What does this boilerplate contain ?](#what-does-this-boilerplate-contain-?)
+1. [What does this boilerplate contain ?](#what-does-this-boilerplate-contain)
 2. [Usage](#usage)
 3. [Production version](#production-version)
 4. [Show your support](#show-your-support)
 5. [Author](#author)
-6. [Contributing](#🤝-contributing)
+6. [Contributing](#contributing)
 
 
-## What does this boilerplate contain ?
+## What does this boilerplate contain
 
 - [Typescript support](#typescript-support)
 - [Hexagonal architecture](#hexagonal-architecture)
@@ -186,7 +186,7 @@ Give a ⭐️ if this project helped you!
 - LinkedIn: [@RobinChailley](https://www.linkedin.com/in/robin-chailley/)
 
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues and feature requests are welcome!
 
