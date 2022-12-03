@@ -12,7 +12,13 @@ to ensure well-structured, well-formatted and well-tested code.
 
 ## Content table
 
-1. [What does this boilerplate contain ?](#what-does-this-boilerplate-contain)
+1. [What does this boilerplate contain ?](#what-does-this-boilerplate-contain-?)
+2. [Usage](#usage)
+3. [Production version](#production-version)
+4. [Show your support](#show-your-support)
+5. [Author](#author)
+6. [Contributing](#contributing)
+
 
 ## What does this boilerplate contain ?
 
@@ -20,11 +26,11 @@ to ensure well-structured, well-formatted and well-tested code.
 - [Hexagonal architecture](#hexagonal-architecture)
 - [Atomic design](#atomic-design)
 - [Tests and coverage (snapshots and unit tests)](#tests-and-coverage)
-- [Linter & type checking](#linter-type-checking)
+- [Linter & type checking](#linter-&-type-checking)
 - [Navigation](#navigation)
 - [Alias imports](#alias-imports)
 - [Tailwind](#tailwind)
-- [Multi language support](#translation)
+- [Multi language support](#multi-language-support)
 - [Typed env](#typed-env)
 
 ### Typescript support
@@ -62,7 +68,7 @@ Broadly speaking, the components are divided into 5 categories :
 | Template  | Templates result from many groups of organisms together. The design starts to make sense, to tell an experience |
 | Page      | Pages are the last step of this method. This is where the global interface takes shape |
 
-![AtomDesign](./readme-assets/atomic-design.wbp)
+![AtomDesign](./readme-assets/atomic-design.png)
 
 ### Tests and coverage
 
