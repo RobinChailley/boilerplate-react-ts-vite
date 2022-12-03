@@ -207,7 +207,7 @@ Give a ⭐️ if this project helped you!
 - LinkedIn: [@RobinChailley](https://www.linkedin.com/in/robin-chailley/)
 
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues and feature requests are welcome!
 
